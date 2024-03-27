@@ -8,10 +8,10 @@
 		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.cleilsonadrade.springboot_product</groupId>
-	<artifactId>springboot_product</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot_product</name>
+	<groupId>br.com.cleilsonadrade.spring_product_api</groupId>
+	<artifactId>spring_product_api</artifactId>
+	<version>1.0.0</version>
+	<name>spring_product_api</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

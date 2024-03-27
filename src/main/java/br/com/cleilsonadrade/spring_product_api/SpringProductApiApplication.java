@@ -1,13 +1,13 @@
-package br.cleilsonadrade.springboot_product;
+package br.com.cleilsonadrade.spring_product_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootApplication {
+public class SpringProductApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
+		SpringApplication.run(SpringProductApiApplication.class, args);
 	}
 
 }

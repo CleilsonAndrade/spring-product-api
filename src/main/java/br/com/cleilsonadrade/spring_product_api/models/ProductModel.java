@@ -19,16 +19,16 @@ public class ProductModel extends RepresentationModel<ProductModel> implements S
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private UUID idProduct;
+  private UUID id;
   private String name;
   private BigDecimal value;
 
-  public UUID getIdProduct() {
-    return idProduct;
+  public UUID getId() {
+    return id;
   }
 
-  public void setIdProduct(UUID idProduct) {
-    this.idProduct = idProduct;
+  public void setId(UUID id) {
+    this.id = id;
   }
 
   public String getName() {

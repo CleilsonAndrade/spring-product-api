@@ -43,7 +43,7 @@ public class ProductController {
 
     if (!productsList.isEmpty()) {
       for (ProductModel product : productsList) {
-        UUID id = product.getIdProduct();
+        UUID id = product.getId();
         product.add(linkTo(methodOn(ProductController.class).getOneProduct(id)).withSelfRel());
       }
 
@@ -54,7 +54,7 @@ public class ProductController {
   }
 
   @GetMapping("/products/{id}")
-  public ResponseEntity<Object> getOneProduct(@PathVariable(value = "id") UUID id) {
+  public ResponseEntity<Object> getOneProduct(@PathVariable UUID id) {
     Optional<ProductModel> productO = productRepository.findById(id);
     if (productO.isEmpty()) {
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");
@@ -66,7 +66,7 @@ public class ProductController {
   }
 
   @PutMapping("/products/{id}")
-  public ResponseEntity<Object> updateProduct(@PathVariable(value = "id") UUID id,
+  public ResponseEntity<Object> updateProduct(@PathVariable UUID id,
       @RequestBody @Valid ProductRecordDTO productRecordDTO) {
     Optional<ProductModel> productO = productRepository.findById(id);
     if (productO.isEmpty()) {
@@ -80,7 +80,7 @@ public class ProductController {
   }
 
   @DeleteMapping("/products/{id}")
-  public ResponseEntity<Object> deleteProduct(@PathVariable("id") UUID id) {
+  public ResponseEntity<Object> deleteProduct(@PathVariable UUID id) {
     Optional<ProductModel> productO = productRepository.findById(id);
     if (productO.isEmpty()) {
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");

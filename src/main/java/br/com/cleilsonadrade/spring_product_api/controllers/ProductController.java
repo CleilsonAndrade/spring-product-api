@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cleilsonadrade.spring_product_api.dtos.ProductRecordDTO;
@@ -24,12 +25,13 @@ import br.com.cleilsonadrade.spring_product_api.models.ProductModel;
 import br.com.cleilsonadrade.spring_product_api.repositories.ProductRepository;
 import jakarta.validation.Valid;
 
+@RequestMapping("/products")
 @RestController
 public class ProductController {
   @Autowired
   ProductRepository productRepository;
 
-  @PostMapping("/products")
+  @PostMapping
   public ResponseEntity<ProductModel> saveProduct(@RequestBody @Valid ProductRecordDTO productRecordDTO) {
     var productModel = new ProductModel();
     BeanUtils.copyProperties(productRecordDTO, productModel);
@@ -37,7 +39,7 @@ public class ProductController {
     return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));
   }
 
-  @GetMapping("/products")
+  @GetMapping
   public ResponseEntity<List<ProductModel>> getAllProducts() {
     List<ProductModel> productsList = productRepository.findAll();
 
@@ -53,7 +55,7 @@ public class ProductController {
     return ResponseEntity.status(HttpStatus.OK).body(productRepository.findAll());
   }
 
-  @GetMapping("/products/{id}")
+  @GetMapping("/{id}")
   public ResponseEntity<Object> getOneProduct(@PathVariable UUID id) {
     Optional<ProductModel> productO = productRepository.findById(id);
     if (productO.isEmpty()) {
@@ -65,7 +67,7 @@ public class ProductController {
     return ResponseEntity.status(HttpStatus.OK).body(productO.get());
   }
 
-  @PutMapping("/products/{id}")
+  @PutMapping("/{id}")
   public ResponseEntity<Object> updateProduct(@PathVariable UUID id,
       @RequestBody @Valid ProductRecordDTO productRecordDTO) {
     Optional<ProductModel> productO = productRepository.findById(id);
@@ -79,7 +81,7 @@ public class ProductController {
     return ResponseEntity.status(HttpStatus.OK).body(productRepository.save(productModel));
   }
 
-  @DeleteMapping("/products/{id}")
+  @DeleteMapping("/{id}")
   public ResponseEntity<Object> deleteProduct(@PathVariable UUID id) {
     Optional<ProductModel> productO = productRepository.findById(id);
     if (productO.isEmpty()) {

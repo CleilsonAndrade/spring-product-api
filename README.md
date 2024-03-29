@@ -12,7 +12,7 @@
 * [Licença](#licença)
 
 # 📃 <span id="descrição">Descrição</span>
-Spring Product API é uma API simples de um CRUD de produtos, desenvolvida com o framework [**Spring**](https://spring.io/) e [**JPA**](https://spring.io/projects/spring-data-jpa) persistindo os dados em um banco de dados [**MySQL**](https://www.mysql.com/).
+Spring Product API é uma API simples de um CRUD de produtos, desenvolvida com o framework [**Spring**](https://spring.io/) e [**JPA**](https://spring.io/projects/spring-data-jpa) persistindo os dados em um banco de dados [**MySQL**](https://www.mysql.com/) e algumas das novas features apresentadas na versão 17 do Java como records para o auxilio no desenvolvimento de DTOs.
 
 # 📌 <span id="requisitos">Requisitos Funcionais</span>
 - [x] Cadastro de produtos<br>

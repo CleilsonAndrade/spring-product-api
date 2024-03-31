@@ -32,11 +32,11 @@ Spring Product API é uma API simples de um CRUD de produtos, desenvolvida com o
 # 📍 <span id="endpoints">Endpoints</span>
 | Endpoint               | Resumo                                          
 |----------------------|-----------------------------------------------------
-| <kbd>POST /products </kbd>     | Responsável por cadastrar um produto
-| <kbd>GET /products/:id </kbd>     | Responsável por exibir as informações de um produto informando o ID
-| <kbd>GET /products </kbd>     |   Responsável por listar todos os produtos cadastrados
-| <kbd>PUT /products/:id </kbd>     | Responsável por atualizar as informações de um produto
-| <kbd>DELETE /products/:id </kbd>     | Responsável por deletar produto
+| <kbd>POST /products </kbd> | Responsável por cadastrar um produto
+| <kbd>GET /products/:id </kbd> | Responsável por exibir as informações de um produto, informando o ID
+| <kbd>GET /products </kbd> | Responsável por listar todos os produtos cadastrados
+| <kbd>PUT /products/:id </kbd> | Responsável por atualizar as informações de um produto, informando o ID
+| <kbd>DELETE /products/:id </kbd> | Responsável por deletar produto, informando o ID
 
 # 🚀 <span id="instalação">Instalação</span>
 ```bash

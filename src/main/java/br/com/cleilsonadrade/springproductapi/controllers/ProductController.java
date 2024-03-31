@@ -1,4 +1,4 @@
-package br.com.cleilsonadrade.spring_product_api.controllers;
+package br.com.cleilsonadrade.springproductapi.controllers;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.cleilsonadrade.spring_product_api.dtos.ProductRecordDTO;
-import br.com.cleilsonadrade.spring_product_api.models.ProductModel;
-import br.com.cleilsonadrade.spring_product_api.repositories.ProductRepository;
+import br.com.cleilsonadrade.springproductapi.dtos.ProductRecordDTO;
+import br.com.cleilsonadrade.springproductapi.models.ProductModel;
+import br.com.cleilsonadrade.springproductapi.repositories.ProductRepository;
 import jakarta.validation.Valid;
 
 @RequestMapping("/products")

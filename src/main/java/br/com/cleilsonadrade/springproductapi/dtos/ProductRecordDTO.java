@@ -1,4 +1,4 @@
-package br.com.cleilsonadrade.spring_product_api.dtos;
+package br.com.cleilsonadrade.springproductapi.dtos;
 
 import java.math.BigDecimal;
 

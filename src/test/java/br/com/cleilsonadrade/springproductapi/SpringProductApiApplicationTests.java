@@ -1,4 +1,4 @@
-package br.com.cleilsonadrade.spring_product_api;
+package br.com.cleilsonadrade.springproductapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

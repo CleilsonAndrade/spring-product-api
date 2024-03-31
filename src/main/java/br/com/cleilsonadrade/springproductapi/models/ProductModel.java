@@ -1,4 +1,4 @@
-package br.com.cleilsonadrade.spring_product_api.models;
+package br.com.cleilsonadrade.springproductapi.models;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

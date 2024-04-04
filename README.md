@@ -45,7 +45,7 @@ Spring Product API é uma API simples de um CRUD de produtos, desenvolvida com o
   $ cd ./spring-product-api
 
   # Instalar as dependências:
-  $ mvn clean instal
+  $ mvn clean install
 
   # Executar:
   $ mvn spring-boot:run

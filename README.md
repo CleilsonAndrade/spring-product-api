@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Spring Product API</h1>
   <p>Spring Product API é uma API simples de um CRUD de produtos, desenvolvida com o framework Spring e JPA persistindo os dados em um banco de dados MySQL.</p>
+  <img src="./references/flow.png" alt="Flow" width="800">
 </div>
 
 # 📒 Índice
